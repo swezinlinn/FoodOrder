@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Orders</string>
+    <string name="auto_reject">Auto Reject \n%1$s</string>
+    <string name="item_quantity">%1$s Item</string>
+    <string name="created_at">at %1$s</string>
+    <string name="detail_item_quantity">x %1$s</string>
+    <string name="order_id"># %1$s</string>
+</resources>

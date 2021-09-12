@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/nav_graph.xml"
+        app:startDestination="@id/order_list_fragment">
+    <fragment
+        android:id="@+id/order_list_fragment"
+        android:name="com.android.order.ui.OrderListFragment"
+        tools:layout="@layout/fragment_common_ingredient">
+
+        <action
+            android:id="@+id/action_order_list_to_ingredients"
+            app:destination="@id/ingredient_fragment"
+            app:popUpTo="@id/order_list_fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+            android:id="@+id/ingredient_fragment"
+            android:name="com.android.order.ui.CommonIngredientFragment"
+            tools:layout="@layout/fragment_common_ingredient">
+
+<!--        <action-->
+<!--                android:id="@+id/action_movie_list_to_movie_detail"-->
+<!--                app:destination="@id/movie_detail_fragment"-->
+<!--                app:popUpTo="@id/"-->
+<!--                app:enterAnim="@anim/slide_in_right"-->
+<!--                app:exitAnim="@anim/slide_out_left"-->
+<!--                app:popEnterAnim="@anim/slide_in_left"-->
+<!--                app:popExitAnim="@anim/slide_out_right" />-->
+    </fragment>
+
+</navigation>
