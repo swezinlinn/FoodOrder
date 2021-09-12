@@ -4,8 +4,8 @@ package com.android.order.ui
 import android.view.View
 import android.view.ViewGroup
 import androidx.test.espresso.Espresso.onView
-import androidx.test.espresso.Espresso.pressBack
 import androidx.test.espresso.action.ViewActions.*
+import androidx.test.espresso.assertion.ViewAssertions.*
 import androidx.test.espresso.matcher.ViewMatchers.*
 import androidx.test.filters.LargeTest
 import androidx.test.rule.ActivityTestRule
@@ -120,7 +120,7 @@ withId(R.id.search_edit_frame),
 1)),
 0),
 isDisplayed()))
-        searchAutoComplete.perform(replaceText("Burger"), closeSoftKeyboard())
+        searchAutoComplete.perform(replaceText("Bubble"), closeSoftKeyboard())
         
         val appCompatImageButton = onView(
 allOf(withContentDescription("Navigate up"),
@@ -132,8 +132,6 @@ withClassName(`is`("androidx.constraintlayout.widget.ConstraintLayout")),
 0),
 isDisplayed()))
         appCompatImageButton.perform(click())
-        
-        pressBack()
         }
     
     private fun childAtPosition(
